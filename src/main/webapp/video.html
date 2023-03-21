@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/1.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .wrap {
+            margin: 0 auto;
+            width: 1200px;
+            padding-top: 10px;
+        }
+
+        .h2 {
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            font-size: 120%;
+            color: #000;
+            border-bottom: 2px solid #e5e5e5;
+        }
+        
+
+        .player {
+            background: url(./imge/loading.gif) no-repeat center center;
+            height: 490px;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .numlist li {
+            float: left;
+            text-align: center;
+        }
+        
+        .numlist li a {
+            display: block;
+            width: 108px;
+            height: 32px;
+            line-height: 32px;
+            border: 1px solid #dfdfdf;
+            color: #0785d4;
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="#">首页</a>
+            <a href="#">番表</a>
+            <div class="header-right">
+                <form class="" action="#" method="post" >
+                    <input class="se" type="text" placeholder="输入关键字">
+                    <input class="ico-img" type="submit" value>
+                    <!-- <input type="submit" class="ico-img2"> -->
+                </form>
+                <div><a href= "#"><img class = "head-photo" src ="./imge/4.jpeg" alt = "4"></img></a></div>
+            </div>
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="h2">
+            <a href="test.html">首页</a>
+            “&nbsp;>>&nbsp;”
+            <a href="#">进击的巨人最终季</a>
+        </div>
+        <div class="player" style="background-color:#000">
+            <video width="1200px" height="490px" controls>
+                <source src="video/进击的巨人final_season1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <h3>播放列表</h3>
+        </div>
+        <ul class="numlist" style="display: block;">
+            <li><a href="#" class="twidth">1</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

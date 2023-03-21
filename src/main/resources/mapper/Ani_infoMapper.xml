@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hkz.hkz_demo.dao.Ani_infoDao">
+   
+    <select id="getAni_infoList" resultType="Ani_info">
+        select * from t_ani_info
+    </select>
+
+    <select id="getInfoByName" parameterType = "String" resultType="Ani_info">
+        select * from t_ani_info where name like concat('%', #{name}, '%');
+    </select>
+
+    <select id="getSimpleInfoByName" parameterType="String" resultType="Ani_info">
+        select * from t_ani_info where name = #{name}
+    </select>
+
+    <select id="getNameByWeek" parameterType="String" resultType="Ani_info">
+        select * from t_ani_info where week = #{week}
+    </select>
+
+</mapper>
